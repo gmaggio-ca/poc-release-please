@@ -8,7 +8,7 @@ Monorepo Node.js con npm workspaces + Release Please (GitHub Actions).
 
 ## Setup locale
 ```bash
-npm ci
+npm i
 npm run -ws test
 npm --workspace apps/web start
 ```
