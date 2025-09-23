@@ -5,10 +5,10 @@
   ],
   "packages": {
     "apps/web": {
-      "release-type": "node"
+      "release-type": "node", "release-as": "0.1.0"
     },
     "packages/utils": {
-      "release-type": "node"
+      "release-type": "node", "release-as": "0.1.0"
     }
   }
 }
