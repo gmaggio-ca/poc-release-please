@@ -1,0 +1,10 @@
+{
+  "name": "@example/utils",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "echo 'utils built'",
+    "test": "node -e \"console.log('utils ok')\""
+  }
+}

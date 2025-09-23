@@ -1,0 +1,14 @@
+{
+  "name": "example-workspace",
+  "private": true,
+  "version": "0.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run -ws build",
+    "test": "npm -ws run test --if-present",
+    "lint": "npm -ws run lint --if-present"
+  }
+}

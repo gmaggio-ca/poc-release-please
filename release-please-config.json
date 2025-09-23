@@ -1,0 +1,14 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "plugins": [
+    "node-workspace"
+  ],
+  "packages": {
+    "apps/web": {
+      "release-type": "node"
+    },
+    "packages/utils": {
+      "release-type": "node"
+    }
+  }
+}
