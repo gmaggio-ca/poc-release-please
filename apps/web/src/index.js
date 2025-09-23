@@ -5,9 +5,12 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.get('/', (_req, res) => {
-  res.send({ message: greet('Release Please') });
+  
+  // Read version from environment variable or default to 'development'
+  const version = process.env.VERSION || 'development';
+  res.send({ message: greet(`Release Please ${version}`) });
 });
 
 app.listen(port, () => {
-  console.log(`web listening on http://localhost:${port}`);
+  console.log(`Web listening on http://localhost:${port}`);
 });
