@@ -29,8 +29,8 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish @gmaggio-ca/poc-web to GitHub Packages
-        if: ${{ steps.release.outputs['packages/web--release_created'] == 'true' }}
-        working-directory: packages/web
+        if: ${{ steps.release.outputs['apps/web--release_created'] == 'true' }}
+        working-directory: apps/web
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
