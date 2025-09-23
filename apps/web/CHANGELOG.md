@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/gmaggio-ca/poc-release-please/compare/web-v0.1.0...web-v0.1.1) (2025-09-23)
+
+
+### Bug Fixes
+
+* update default port to 3001 and clean release configuration ([6583293](https://github.com/gmaggio-ca/poc-release-please/commit/6583293f9ecdcd28477e939a3f45f91fd0cbb160))
+
 ## [0.1.0](https://github.com/gmaggio-ca/poc-release-please/compare/web-v0.1.0...web-v0.1.0) (2025-09-23)
 
 
