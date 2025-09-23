@@ -1,5 +1,5 @@
 {
-  "name": "@example/utils",
+  "name": "@gmaggio-ca/poc-utils",
   "version": "0.1.0",
   "type": "module",
   "main": "src/index.js",

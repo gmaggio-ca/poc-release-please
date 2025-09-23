@@ -21,9 +21,16 @@ jobs:
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
 
-      - name: Publish @your-scope/utils to GitHub Packages
+      - name: Publish @gmaggio-ca/poc-utils to GitHub Packages
         if: ${{ steps.release.outputs['packages/utils--release_created'] == 'true' }}
         working-directory: packages/utils
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish @gmaggio-ca/poc-web to GitHub Packages
+        if: ${{ steps.release.outputs['packages/web--release_created'] == 'true' }}
+        working-directory: packages/web
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
