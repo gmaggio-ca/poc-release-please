@@ -2,13 +2,13 @@ import express from 'express';
 import { greet } from '@example/utils';
 
 const app = express();
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 4002;
 
 app.get('/', (_req, res) => {
   
   // Read version from environment variable or default to 'development'
   const version = process.env.VERSION || 'development';
-  res.send({ message: greet(`Release Please: ${version} !`) });
+  res.send({ message: greet(`Release Please: ${version} !!!`) });
 });
 
 app.listen(port, () => {
