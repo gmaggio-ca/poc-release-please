@@ -1,1 +1,4 @@
-{}
+{
+    "apps/web": "0.1.0",
+    "packages/utils": "0.1.0"
+  }
