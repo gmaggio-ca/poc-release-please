@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/gmaggio-ca/poc-release-please/compare/web-v0.1.1...web-v0.1.2) (2025-09-23)
+
+
+### Bug Fixes
+
+* update default port to 4002 and enhance greeting message with additional exclamation marks ([7990877](https://github.com/gmaggio-ca/poc-release-please/commit/79908772a183250c857d527786ff0e80d4fb7b2e))
+
 ## [0.1.1](https://github.com/gmaggio-ca/poc-release-please/compare/web-v0.1.0...web-v0.1.1) (2025-09-23)
 
 
