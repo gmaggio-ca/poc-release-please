@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/gmaggio-ca/poc-release-please/compare/poc-web-v0.2.1...poc-web-v0.2.2) (2025-09-23)
+
+
+### Bug Fixes
+
+* update working directory for package publishing and change default port to 5002 ([1f46ff6](https://github.com/gmaggio-ca/poc-release-please/commit/1f46ff6a44e5e31e4350bbb0357e0c19ad732fbd))
+
 ## [0.2.1](https://github.com/gmaggio-ca/poc-release-please/compare/poc-web-v0.2.0...poc-web-v0.2.1) (2025-09-23)
 
 
