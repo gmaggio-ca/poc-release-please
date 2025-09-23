@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/gmaggio-ca/poc-release-please/compare/poc-web-v0.2.0...poc-web-v0.2.1) (2025-09-23)
+
+
+### Bug Fixes
+
+* change default port from 5000 to 5001 ([c7937ff](https://github.com/gmaggio-ca/poc-release-please/commit/c7937ff7ceb1cb52524f135b1f259432493aada6))
+
 ## [0.2.0](https://github.com/gmaggio-ca/poc-release-please/compare/poc-web-v0.1.3...poc-web-v0.2.0) (2025-09-23)
 
 
