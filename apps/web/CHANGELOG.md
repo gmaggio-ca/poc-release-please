@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.2.6](https://github.com/gmaggio-ca/poc-release-please/compare/poc-web-v0.2.5...poc-web-v0.2.6) (2025-09-24)
+
+
+### Bug Fixes
+
+* change default port from 5043 to 5044 ([#12](https://github.com/gmaggio-ca/poc-release-please/issues/12)) ([b3dda61](https://github.com/gmaggio-ca/poc-release-please/commit/b3dda613c96ba98e78b2e89ab6e084388f0472c5))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @gmaggio-ca/poc-utils bumped from ^0.2.1 to ^0.2.2
+
 ## [0.2.5](https://github.com/gmaggio-ca/poc-release-please/compare/poc-web-v0.2.4...poc-web-v0.2.5) (2025-09-24)
 
 

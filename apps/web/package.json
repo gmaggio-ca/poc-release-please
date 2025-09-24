@@ -1,6 +1,6 @@
 {
   "name": "@gmaggio-ca/poc-web",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
@@ -12,7 +12,7 @@
     "test": "node -e \"console.log('web ok')\""
   },
   "dependencies": {
-    "@gmaggio-ca/poc-utils": "^0.2.1",
+    "@gmaggio-ca/poc-utils": "^0.2.2",
     "express": "^4.19.2"
   }
 }

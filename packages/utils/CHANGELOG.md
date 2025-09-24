@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/gmaggio-ca/poc-release-please/compare/poc-utils-v0.2.1...poc-utils-v0.2.2) (2025-09-24)
+
+
+### Bug Fixes
+
+* update greeting format in greet function ([#13](https://github.com/gmaggio-ca/poc-release-please/issues/13)) ([37f7d45](https://github.com/gmaggio-ca/poc-release-please/commit/37f7d4589d383302ce353265113df5f883620705))
+
 ## [0.2.1](https://github.com/gmaggio-ca/poc-release-please/compare/poc-utils-v0.2.0...poc-utils-v0.2.1) (2025-09-24)
 
 
