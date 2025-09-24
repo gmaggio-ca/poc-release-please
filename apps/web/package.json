@@ -1,6 +1,6 @@
 {
   "name": "@gmaggio-ca/poc-web",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "publishConfig": { "registry": "https://npm.pkg.github.com" },
   "type": "module",
   "main": "src/index.js",
