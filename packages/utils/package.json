@@ -1,9 +1,11 @@
 {
   "name": "@gmaggio-ca/poc-utils",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "type": "module",
   "main": "src/index.js",
-  "publishConfig": { "registry": "https://npm.pkg.github.com" },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "build": "echo 'utils built'",
     "test": "node -e \"console.log('utils ok')\""
