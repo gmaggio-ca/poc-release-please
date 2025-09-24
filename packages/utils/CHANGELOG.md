@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/gmaggio-ca/poc-release-please/compare/poc-utils-v0.2.0...poc-utils-v0.2.1) (2025-09-24)
+
+
+### Bug Fixes
+
+* update GitHub Actions workflow to correctly publish packages and set publishConfig for npm ([a9f5d8e](https://github.com/gmaggio-ca/poc-release-please/commit/a9f5d8e3e78ae2b36a8d72e60e85610faaa98eef))
+
 ## [0.2.0](https://github.com/gmaggio-ca/poc-release-please/compare/poc-utils-v0.1.0...poc-utils-v0.2.0) (2025-09-23)
 
 

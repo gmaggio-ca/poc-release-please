@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.2.4](https://github.com/gmaggio-ca/poc-release-please/compare/poc-web-v0.2.3...poc-web-v0.2.4) (2025-09-24)
+
+
+### Bug Fixes
+
+* change default port from 5003 to 5043 ([82eb1b2](https://github.com/gmaggio-ca/poc-release-please/commit/82eb1b2f20e8f30df312fccaaddd473c6d4427fb))
+* update GitHub Actions workflow to correctly publish packages and set publishConfig for npm ([a9f5d8e](https://github.com/gmaggio-ca/poc-release-please/commit/a9f5d8e3e78ae2b36a8d72e60e85610faaa98eef))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @gmaggio-ca/poc-utils bumped from ^0.2.0 to ^0.2.1
+
 ## [0.2.3](https://github.com/gmaggio-ca/poc-release-please/compare/poc-web-v0.2.2...poc-web-v0.2.3) (2025-09-23)
 
 
