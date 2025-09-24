@@ -16,41 +16,37 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: googleapis/release-please-action@v4
-        id: release
+        id: rp
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
 
-      # Only run publish if a release was created
+      # SEMPRE fai checkout, non metterlo dietro a if
       - uses: actions/checkout@v4
-        if: ${{ steps.release.outputs.release_created }}
 
       - uses: actions/setup-node@v4
-        if: ${{ steps.release.outputs.release_created }}
         with:
           node-version: 20
-          registry-url: 'https://npm.pkg.github.com'
+          registry-url: https://npm.pkg.github.com
 
       - name: Configure npm for GitHub Packages
-        if: ${{ steps.release.outputs.release_created }}
         run: |
           echo "@${{ github.repository_owner }}:registry=https://npm.pkg.github.com" >> .npmrc
           echo "//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}" >> .npmrc
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Publish only packages that were actually released (per-path outputs)
-      - name: Publish @gmaggio-ca/poc-utils to GitHub Packages
-        if: ${{ steps.release.outputs['packages/utils--release_created'] == 'true' }}
+      # Pubblica SOLO se Release Please ha creato il rilascio per quel path
+      - name: Publish @gmaggio-ca/poc-utils
+        if: ${{ steps.rp.outputs['packages/utils--release_created'] == 'true' }}
         working-directory: packages/utils
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Publish only packages that were actually released (per-path outputs)
-      - name: Publish @gmaggio-ca/poc-web to GitHub Packages
-        if: ${{ steps.release.outputs['apps/web--release_created'] == 'true' }}
+      - name: Publish @gmaggio-ca/poc-web
+        if: ${{ steps.rp.outputs['apps/web--release_created'] == 'true' }}
         working-directory: apps/web
         run: npm publish
         env:
